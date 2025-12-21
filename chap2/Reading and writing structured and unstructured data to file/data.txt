@@ -1,0 +1,6 @@
+Hello, this is a sample text file.
+It contains multiple lines of text.
+Each line can represent a record, a sentence, or any unstructured data.
+Python can easily read and write such files.
+You can also process each line individually if needed.
+End of file.

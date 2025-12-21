@@ -1,0 +1,30 @@
+{
+    "students": [
+        {
+            "name": "Alice",
+            "age": 23,
+            "email": "alice@example.com",
+            "courses": [
+                "Python",
+                "Data Science",
+                "Machine Learning"
+            ],
+            "is_enrolled": true
+        },
+        {
+            "name": "Bob",
+            "age": 25,
+            "email": "bob@example.com",
+            "courses": [
+                "Java",
+                "Web Development"
+            ],
+            "is_enrolled": false
+        }
+    ],
+    "instructor": {
+        "name": "Dr. Smith",
+        "department": "Computer Science"
+    },
+    "semester": "Fall 2025"
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Alice",
+    "age": 25,
+    "email": "alice@example.com",
+    "is_student": true,
+    "courses": ["Python", "Data Science", "Machine Learning"],
+    "address": {
+        "street": "123 Main St",
+        "city": "Kathmandu",
+        "country": "Nepal"
+    }
+}
