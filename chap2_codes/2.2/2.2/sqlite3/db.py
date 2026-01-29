@@ -1,3 +1,5 @@
+
+#database create
 import sqlite3
 conn = sqlite3.connect('school1.db') # Database file is created if not exists
 cursor = conn.cursor()
@@ -14,7 +16,7 @@ marks INTEGER
 print("Table created successfully")
 
 # to insert single record
-cursor.execute("""INSERT INTO students (id, name, marks) VALUES (?, ?, ?)""", (1, 'Sita', 85))
+cursor.execute("INSERT INTO students (id, name, marks) VALUES (?, ?, ?)", (1, 'Sita', 85))
 print("Record inserted successfully")
 
 # to insert multiple record
@@ -44,6 +46,9 @@ else:
 cursor.execute("DELETE FROM students WHERE name = ?", ("Ram",))
 conn.commit()
 print("Record deleted successfully")
+
+#drop table 
+cursor.execute("DROP TABLE IF EXISTS students")
 
 conn.commit()
 
