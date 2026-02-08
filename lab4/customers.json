@@ -1,0 +1,82 @@
+[
+    {
+        "customer_id": "CUST_001",
+        "name": "John Smith",
+        "city": "New York",
+        "age": 28,
+        "email": "john.smith@email.com",
+        "phone": "+1-555-0101"
+    },
+    {
+        "customer_id": "CUST_002",
+        "name": "Emma Johnson",
+        "city": "Los Angeles",
+        "age": 35,
+        "email": "emma.j@email.com",
+        "phone": "+1-555-0102"
+    },
+    {
+        "customer_id": "CUST_003",
+        "name": "Michael Brown",
+        "city": "Chicago",
+        "age": 42,
+        "email": "m.brown@email.com",
+        "phone": "+1-555-0103"
+    },
+    {
+        "customer_id": "CUST_004",
+        "name": "Sarah Davis",
+        "city": "Houston",
+        "age": 31,
+        "email": "sarah.d@email.com",
+        "phone": "+1-555-0104"
+    },
+    {
+        "customer_id": "CUST_005",
+        "name": "David Wilson",
+        "city": "Phoenix",
+        "age": 27,
+        "email": "david.wilson@email.com",
+        "phone": "+1-555-0105"
+    },
+    {
+        "customer_id": "CUST_006",
+        "name": "Lisa Martinez",
+        "city": "Philadelphia",
+        "age": 39,
+        "email": "lisa.m@email.com",
+        "phone": "+1-555-0106"
+    },
+    {
+        "customer_id": "CUST_007",
+        "name": "James Anderson",
+        "city": "San Antonio",
+        "age": 45,
+        "email": "james.a@email.com",
+        "phone": "+1-555-0107"
+    },
+    {
+        "customer_id": "CUST_008",
+        "name": "Patricia Taylor",
+        "city": "San Diego",
+        "age": 33,
+        "email": "patricia.t@email.com",
+        "phone": "+1-555-0108"
+    },
+    {
+        "customer_id": "CUST_009",
+        "name": "Robert Thomas",
+        "city": "Dallas",
+        "age": 29,
+        "email": "robert.thomas@email.com",
+        "phone": "+1-555-0109"
+    },
+    {
+        "customer_id": "CUST_010",
+        "name": "Jennifer Garcia",
+        "city": "San Jose",
+        "age": 36,
+        "email": "jennifer.g@email.com",
+        "phone": "+1-555-0110"
+    }
+]
