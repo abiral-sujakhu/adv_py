@@ -1,0 +1,69 @@
+2026-02-12 12:03:16,475 - DataPipeline - INFO - Logging configured successfully!
+2026-02-12 12:03:16,539 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:16,543 - DataPipeline - INFO - TASK 1: CSV to Database Pipeline Started
+2026-02-12 12:03:16,547 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:16,552 - DataPipeline - INFO - Starting to load CSV data from: c:\Users\mausa\Desktop\5thsem\adv_py\lab4\retail_store_sales.csv
+2026-02-12 12:03:16,683 - DataPipeline - INFO - Successfully loaded 12575 rows and 11 columns
+2026-02-12 12:03:16,686 - DataPipeline - DEBUG - Columns: ['Transaction ID', 'Customer ID', 'Category', 'Item', 'Price Per Unit', 'Quantity', 'Total Spent', 'Payment Method', 'Location', 'Transaction Date', 'Discount Applied']
+2026-02-12 12:03:16,716 - DataPipeline - INFO - Starting data transformation...
+2026-02-12 12:03:16,731 - DataPipeline - INFO - Total missing values before transformation: 7229
+2026-02-12 12:03:16,739 - DataPipeline - DEBUG - Filled 609 missing values in 'Price Per Unit' with median: 23.0
+2026-02-12 12:03:16,741 - DataPipeline - DEBUG - Filled 604 missing values in 'Quantity' with median: 6.0
+2026-02-12 12:03:16,746 - DataPipeline - DEBUG - Filled 604 missing values in 'Total Spent' with median: 108.5
+2026-02-12 12:03:16,767 - DataPipeline - DEBUG - Filled 1213 missing values in 'Item' with mode: Item_2_BEV
+2026-02-12 12:03:16,784 - DataPipeline - DEBUG - Filled 4199 missing values in 'Discount Applied' with mode: True
+2026-02-12 12:03:16,797 - DataPipeline - INFO - Total missing values after transformation: 0
+2026-02-12 12:03:16,818 - DataPipeline - INFO - Added processed_at timestamp column
+2026-02-12 12:03:16,819 - DataPipeline - INFO - Transformation complete. Rows: 12575 -> 12575
+2026-02-12 12:03:16,821 - DataPipeline - INFO - Starting to write data to database: data_pipeline.db, table: retail_sales
+2026-02-12 12:03:16,934 - DataPipeline - INFO - Successfully wrote 12575 rows to 'retail_sales' table in 'data_pipeline.db'
+2026-02-12 12:03:16,935 - DataPipeline - INFO - TASK 1: Pipeline completed successfully!
+2026-02-12 12:03:16,998 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:17,000 - DataPipeline - INFO - TASK 2: API to Database Pipeline Started
+2026-02-12 12:03:17,003 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:17,009 - DataPipeline - INFO - Fetching data from API: https://jsonplaceholder.typicode.com/posts
+2026-02-12 12:03:18,404 - DataPipeline - INFO - Successfully fetched data from API
+2026-02-12 12:03:18,414 - DataPipeline - INFO - Starting API data transformation...
+2026-02-12 12:03:18,424 - DataPipeline - INFO - Converted data to DataFrame: 100 rows, 4 columns
+2026-02-12 12:03:18,436 - DataPipeline - DEBUG - Cleaned column names: ['userid', 'id', 'title', 'body']
+2026-02-12 12:03:18,440 - DataPipeline - INFO - API data transformation completed successfully
+2026-02-12 12:03:18,456 - DataPipeline - INFO - Writing API data to database: data_pipeline.db, table: api_posts
+2026-02-12 12:03:18,624 - DataPipeline - INFO - Successfully wrote 100 rows to 'api_posts' table
+2026-02-12 12:03:18,628 - DataPipeline - INFO - TASK 2: Pipeline completed successfully!
+2026-02-12 12:03:18,744 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:18,747 - DataPipeline - INFO - TASK 3: Complete Pipeline with Email Notification
+2026-02-12 12:03:18,756 - DataPipeline - INFO - ==================================================
+2026-02-12 12:03:18,761 - DataPipeline - INFO - Step 1: Processing CSV data...
+2026-02-12 12:03:18,764 - DataPipeline - INFO - Starting to load CSV data from: c:\Users\mausa\Desktop\5thsem\adv_py\lab4\retail_store_sales.csv
+2026-02-12 12:03:18,867 - DataPipeline - INFO - Successfully loaded 12575 rows and 11 columns
+2026-02-12 12:03:18,870 - DataPipeline - DEBUG - Columns: ['Transaction ID', 'Customer ID', 'Category', 'Item', 'Price Per Unit', 'Quantity', 'Total Spent', 'Payment Method', 'Location', 'Transaction Date', 'Discount Applied']
+2026-02-12 12:03:18,874 - DataPipeline - INFO - Starting data transformation...
+2026-02-12 12:03:18,890 - DataPipeline - INFO - Total missing values before transformation: 7229
+2026-02-12 12:03:18,902 - DataPipeline - DEBUG - Filled 609 missing values in 'Price Per Unit' with median: 23.0
+2026-02-12 12:03:18,906 - DataPipeline - DEBUG - Filled 604 missing values in 'Quantity' with median: 6.0
+2026-02-12 12:03:18,910 - DataPipeline - DEBUG - Filled 604 missing values in 'Total Spent' with median: 108.5
+2026-02-12 12:03:18,930 - DataPipeline - DEBUG - Filled 1213 missing values in 'Item' with mode: Item_2_BEV
+2026-02-12 12:03:18,950 - DataPipeline - DEBUG - Filled 4199 missing values in 'Discount Applied' with mode: True
+2026-02-12 12:03:18,961 - DataPipeline - INFO - Total missing values after transformation: 0
+2026-02-12 12:03:18,990 - DataPipeline - INFO - Added processed_at timestamp column
+2026-02-12 12:03:18,995 - DataPipeline - INFO - Transformation complete. Rows: 12575 -> 12575
+2026-02-12 12:03:18,998 - DataPipeline - INFO - Starting to write data to database: data_pipeline.db, table: retail_sales_final
+2026-02-12 12:03:19,156 - DataPipeline - INFO - Successfully wrote 12575 rows to 'retail_sales_final' table in 'data_pipeline.db'
+2026-02-12 12:03:19,158 - DataPipeline - INFO - CSV pipeline completed successfully
+2026-02-12 12:03:19,160 - DataPipeline - INFO - Step 2: Processing API data...
+2026-02-12 12:03:19,165 - DataPipeline - INFO - Fetching data from API: https://jsonplaceholder.typicode.com/users
+2026-02-12 12:03:19,492 - DataPipeline - INFO - Successfully fetched data from API
+2026-02-12 12:03:19,498 - DataPipeline - INFO - Starting API data transformation...
+2026-02-12 12:03:19,504 - DataPipeline - INFO - Converted data to DataFrame: 10 rows, 8 columns
+2026-02-12 12:03:19,509 - DataPipeline - DEBUG - Cleaned column names: ['id', 'name', 'username', 'email', 'address', 'phone', 'website', 'company']
+2026-02-12 12:03:19,512 - DataPipeline - INFO - API data transformation completed successfully
+2026-02-12 12:03:19,515 - DataPipeline - INFO - Writing API data to database: data_pipeline.db, table: api_users_final
+2026-02-12 12:03:19,548 - DataPipeline - ERROR - SQLite error: Error binding parameter 5: type 'dict' is not supported
+2026-02-12 12:03:19,552 - DataPipeline - ERROR - API pipeline failed: Database error: Error binding parameter 5: type 'dict' is not supported
+2026-02-12 12:03:19,555 - DataPipeline - INFO - Sending notification email to abiralsujakhu121@gmail.com
+2026-02-12 12:03:19,559 - DataPipeline - INFO - Preparing to send email notification to: abiralsujakhu121@gmail.com
+2026-02-12 12:03:19,564 - DataPipeline - INFO - Connecting to SMTP server...
+2026-02-12 12:03:19,568 - DataPipeline - WARNING - Email credentials not provided - Email simulation only
+2026-02-12 12:09:12,123 - DataPipeline - INFO - Preparing to send email notification to: abiralsujakhu121@gmail.com
+2026-02-12 12:09:12,158 - DataPipeline - INFO - Connecting to SMTP server...
+2026-02-12 12:09:16,802 - DataPipeline - INFO - Email sent successfully to abiralsujakhu121@gmail.com
